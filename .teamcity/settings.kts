@@ -65,13 +65,6 @@ object Build : BuildType({
             goals = "clean test"
             userSettingsSelection = "settings.xml"
         }
-        maven {
-            name = "mvn clean package"
-            id = "Maven3"
-            executionMode = BuildStep.ExecutionMode.ALWAYS
-            goals = "clean package"
-            userSettingsSelection = "settings.xml"
-        }
     }
 
     triggers {
