@@ -5,6 +5,7 @@
   <groupId>Netology</groupId>
   <artifactId>Netology_dsl</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
   <parent>
     <groupId>org.jetbrains.teamcity</groupId>
