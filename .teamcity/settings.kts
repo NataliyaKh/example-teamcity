@@ -51,7 +51,7 @@ object Build : BuildType({
             conditions {
                 contains("teamcity.build.branch", "main")
             }
-            goals = "clean deploy"
+            goals = "clean package"
             userSettingsSelection = "settings.xml"
         }
         maven {
