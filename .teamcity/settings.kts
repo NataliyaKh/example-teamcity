@@ -65,10 +65,7 @@ object Build : BuildType({
         maven {
             name = "mvn clean package"
             id = "Maven3"
-
-            conditions {
-                doesNotContain("teamcity.build.branch", "main")
-            }
+            executionMode = BuildStep.ExecutionMode.ALWAYS
             goals = "clean package"
             userSettingsSelection = "settings.xml"
         }
