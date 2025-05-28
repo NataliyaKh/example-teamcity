@@ -54,6 +54,7 @@ object Build : BuildType({
         maven {
             name = "mvn clean test"
             id = "Maven2"
+            executionMode = BuildStep.ExecutionMode.ALWAYS
 
             conditions {
                 doesNotContain("teamcity.build.branch", "main")
