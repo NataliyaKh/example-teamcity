@@ -45,7 +45,6 @@ object Build : BuildType({
         maven {
             name = "mvn clean package (1)"
             id = "Maven1"
-            enabled = false
             executionMode = BuildStep.ExecutionMode.ALWAYS
 
             conditions {
