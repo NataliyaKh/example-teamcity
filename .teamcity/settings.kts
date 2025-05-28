@@ -43,7 +43,7 @@ object Build : BuildType({
 
     steps {
         maven {
-            name = "mvn clean deploy"
+            name = "mvn clean package (1)"
             id = "Maven1"
             enabled = false
             executionMode = BuildStep.ExecutionMode.ALWAYS
