@@ -43,7 +43,6 @@ object Build : BuildType({
         maven {
             name = "mvn clean deploy"
             id = "Maven1"
-            enabled = false
             executionMode = BuildStep.ExecutionMode.ALWAYS
 
             conditions {
