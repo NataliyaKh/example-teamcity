@@ -43,6 +43,7 @@ object Build : BuildType({
         maven {
             name = "mvn clean deploy"
             id = "Maven1"
+            executionMode = BuildStep.ExecutionMode.ALWAYS
 
             conditions {
                 contains("teamcity.build.branch", "main")
