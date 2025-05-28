@@ -60,6 +60,16 @@ object Build : BuildType({
             goals = "clean test"
             userSettingsSelection = "settings.xml"
         }
+        maven {
+            name = "mvn clean test (1)"
+            id = "Maven2_1"
+
+            conditions {
+                doesNotContain("teamcity.build.branch", "main")
+            }
+            goals = "clean test"
+            userSettingsSelection = "settings.xml"
+        }
     }
 
     triggers {
