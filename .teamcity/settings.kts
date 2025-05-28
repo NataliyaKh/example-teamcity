@@ -71,8 +71,4 @@ object Build : BuildType({
         perfmon {
         }
     }
-    
-    artifacts {
-        artifactRules = "target/*.jar"
-    }
 })
