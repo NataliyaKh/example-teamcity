@@ -13,6 +13,17 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
+  <distributionManagement>
+  <repository>
+    <id>releases</id>
+    <url>http://51.250.101.210:8081/repository/maven-releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <url>http://51.250.101.210:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+  
   <repositories>
     <repository>
       <id>jetbrains-all</id>
