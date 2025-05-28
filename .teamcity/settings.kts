@@ -61,13 +61,13 @@ object Build : BuildType({
             userSettingsSelection = "settings.xml"
         }
         maven {
-            name = "mvn clean test (1)"
+            name = "mvn clean package"
             id = "Maven3"
 
             conditions {
                 doesNotContain("teamcity.build.branch", "main")
             }
-            goals = "clean test"
+            goals = "clean package"
             userSettingsSelection = "settings.xml"
         }
     }
